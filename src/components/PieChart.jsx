@@ -83,7 +83,7 @@ const PieChart = () => {
           direction: "row",
           justify: false,
           translateX: 0,
-          translateY: 56,
+          translateY: 50,
           itemsSpacing: 0,
           itemWidth: 100,
           itemHeight: 18,
@@ -96,6 +96,7 @@ const PieChart = () => {
             {
               on: "hover",
               style: {
+                
                 itemTextColor: "#000",
               },
             },

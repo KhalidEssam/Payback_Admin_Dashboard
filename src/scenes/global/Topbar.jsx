@@ -8,6 +8,7 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
+// import Translator from "../../components/Translator";
 
 const Topbar = () => {
   const theme = useTheme();
@@ -25,6 +26,16 @@ const Topbar = () => {
         <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
         <IconButton type="button" sx={{ p: 1 }}>
           <SearchIcon />
+        </IconButton>
+      </Box>
+      <Box
+        display="flex"
+        backgroundColor={colors.primary[400]}
+        borderRadius="6px"
+      >
+        {/* <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" /> */}
+        <IconButton type="button" sx={{ p: 1 }}>
+          {/* <Translator /> */}
         </IconButton>
       </Box>
 

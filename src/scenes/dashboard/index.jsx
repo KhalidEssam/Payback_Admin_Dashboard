@@ -12,14 +12,14 @@ import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
+import "../../Scss/Themes.css";
 
 const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box m="20px" maxHeight={'100px'}>
-      {/* HEADER */}
+    <Box m="20px" >
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
 
@@ -47,26 +47,31 @@ const Dashboard = () => {
         gap="20px"
       >
         {/* ROW 1 */}
-        <Box
-          gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <StatBox
-            title="12,361"
-            subtitle="Emails Sent"
-            progress="0.75"
-            increase="+14%"
-            icon={
-              <EmailIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
-              />
-            }
-          />
-        </Box>
-        <Box
+        {/* <div className="icons-dashboard"> */}
+        {/* <div className="icons-dashboard"></div> */}
+          <Box
+            gridColumn="span 3"
+            backgroundColor={colors.primary[400]}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            
+            <StatBox
+              
+              title="12,361"
+              subtitle="Emails Sent"
+              progress="0.75"
+              increase="+14%"
+              icon={
+                <EmailIcon
+                
+                  sx={{ color: colors.greenAccent[600], fontSize: "26px" } }
+                />
+              }
+            />
+          </Box>        
+          <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
           display="flex"
